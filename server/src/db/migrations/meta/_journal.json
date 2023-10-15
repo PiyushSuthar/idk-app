@@ -1,0 +1,20 @@
+{
+  "version": "5",
+  "dialect": "pg",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1697387895882,
+      "tag": "0000_majestic_nekra",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1697393821000,
+      "tag": "0001_yummy_angel",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+ALTER TABLE "users" ADD COLUMN "token_version" text DEFAULT '0' NOT NULL;

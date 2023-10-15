@@ -1,6 +1,7 @@
 import { PostgresJsDatabase, drizzle } from 'drizzle-orm/postgres-js';
 import { migrate } from 'drizzle-orm/postgres-js/migrator';
 import postgres from 'postgres';
+import 'dotenv/config';
 
 async function main() {
 	try {
@@ -14,9 +15,14 @@ async function main() {
 		await migrate(db, {
 			migrationsFolder: './src/db/migrations'
 		});
+
+		console.log('Database migrated successfully!');
+		process.exit(0);
 	} catch (error) {
 		console.error('Error migrating database:');
 		console.error(error);
 		process.exit(1);
 	}
 }
+
+main();
