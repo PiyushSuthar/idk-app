@@ -1,0 +1,32 @@
+{
+	"name": "drizzle",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "nodemon --exec ts-node src/index.ts",
+		"start": "node build/index.js",
+		"build": "rimraf dist && tsc",
+		"format": "prettier --write \"./**/*.{ts,json,md}\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@trpc/server": "^10.40.0",
+		"bcrypt": "^5.1.1",
+		"dotenv": "^16.3.1",
+		"drizzle-orm": "^0.28.6",
+		"jsonwebtoken": "^9.0.2",
+		"postgres": "^3.4.0",
+		"zod": "^3.22.4"
+	},
+	"devDependencies": {
+		"@types/node": "^20.8.6",
+		"drizzle-kit": "^0.19.13",
+		"nodemon": "^3.0.1",
+		"prettier": "^3.0.3",
+		"rimraf": "^5.0.5",
+		"typescript": "^5.2.2"
+	}
+}
